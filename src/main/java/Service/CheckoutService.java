@@ -92,6 +92,6 @@ public class CheckoutService {
         System.out.printf("%-19s %5.0f$%n", "Subtotal", subtotal);
         System.out.printf("%-19s %5.0f$%n", "Shipping", shipping);
         System.out.printf("%-19s %5.0f$%n", "Amount", total);
-        System.out.printf("Remaining balance: %.0f$%n", user.getBalance() - total);
+        System.out.printf("Remaining balance: %.0f$%n", user.getBalance());
     }
 }
