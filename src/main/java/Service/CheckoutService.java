@@ -43,7 +43,8 @@ public class CheckoutService {
 
     private void validateCart(Cart cart) {
         if (cart.getItems().isEmpty()) {
-            throw new IllegalStateException("Cart is empty");
+            System.out.println("Cart is empty");
+            System.exit(0);
         }
         
         cart.getItems().forEach((product, quantity) -> {
