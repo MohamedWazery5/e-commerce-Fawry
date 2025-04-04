@@ -20,6 +20,10 @@ public abstract class Product {
 
 
     public Product(String name, double price, int quantity,double weight,boolean shippable) {
+        if (shippable && weight <= 0) {
+            System.out.println("Shippable products must have weight > 0. Invalid weight for: " + name);
+            System.exit(0);
+        }
         this.name = name;
         this.price = price;
         this.quantity = quantity;
